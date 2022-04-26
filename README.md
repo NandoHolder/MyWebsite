@@ -1,5 +1,5 @@
 # MyWebsite
-First Step , home page.
+First Step , home page. (Bootstrap , css , scss, animate.css)
 
 # Next Step > Random Password Generator and Login. 
 
