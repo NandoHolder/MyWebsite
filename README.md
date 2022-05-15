@@ -1,5 +1,5 @@
 # MyWebsite
-First step done! (First page and Random Key generator). :)
+First step done! (First page and Random Password generator). :)
 
  
 
