@@ -58,6 +58,8 @@ article{
     }
     
 @media(max-width:991px){
+   
+   
     .duck{
         justify-content: center !important;     
         width: 80%;
@@ -72,7 +74,7 @@ article{
          
        padding-left: 20px !important;
        .Welcome{
-           margin-inline: 50px !important;
+           margin-inline: 30px !important;
         }
         width: 100%;
         margin-inline: 20px;  
@@ -89,6 +91,11 @@ article{
 }
  
 @media(max-width:1199px){
+   
+    
+   
+   
+   
     .duck{
        
  
@@ -103,7 +110,7 @@ article{
         padding-left: 160px;
        .Welcome h1{
        
-       padding-left: 30px;
+       padding-left: 35px !important;
     }
     
    .gerador p{
@@ -139,7 +146,7 @@ article{
         padding-left: 160px;
        .Welcome h1{
        
-       padding-left: 30px;
+       padding-left: 70px;
     }
     
    .gerador p{

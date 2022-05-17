@@ -23,7 +23,7 @@ function validador (){
     var valor = document.getElementById('senha').value;
 
          if(valor === document.getElementById('password').value ){
-             window.location.href="pagina-dois.html";
+             window.location.href="conteudo.html";
          }
          else{
              alert('Senha Incorreta :(')
@@ -32,3 +32,27 @@ function validador (){
         }
 
        //End Validation Part// 
+
+
+       // Text TypeWrite Effect//
+
+       function typeWrite(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function(letra, i){   
+          
+        setTimeout(function(){
+            elemento.innerHTML += letra;
+        }, 75 * i)
+    
+      });
+    }
+    const titulo = document.querySelector('.titulo-principal');
+    typeWrite(titulo);
+    
+    // End Text TypeWrite Effect//
+
+
+    //Pisca Page Formacao//
+  
+    //END Pisca Page Formacao//

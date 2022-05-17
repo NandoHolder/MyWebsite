@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anybody&family=Barlow:wght@100;200;300;400&family=Press+Start+2P&family=Roboto:wght@300;500;900&family=Send+Flowers&family=Source+Sans+Pro:wght@200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 /*!
@@ -11562,6 +11563,10 @@ header {
   padding: 20px;
 }
 
+header {
+  margin-bottom: 40px;
+}
+
 h1 {
   font-size: 38px;
   white-space: nowrap;
@@ -11579,11 +11584,89 @@ input {
   margin-left: 0px;
 }
 
+.titulo-principal {
+  margin-top: 20px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.titulo-principal:after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.pagina2 {
+  margin-top: 5px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px !important;
+}
+
+.pagina2:hover {
+  background-color: #000000;
+  color: #FFFF00;
+}
+
 button {
   background-color: #FFFF00;
   margin-top: 5px;
   font-family: "Press Start 2P", cursive;
   font-size: 10px;
+}
+
+.formacao, a {
+  font-family: "Barlow", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.headerformacao {
+  padding-bottom: 1px;
+}
+
+.corpopagina2 {
+  margin-top: -50px;
+}
+
+.blink {
+  font-family: "Barlow", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.carousel-inner {
+  box-shadow: 1px 1px black;
+  border-radius: 5%;
+}
+
+.rabbit {
+  padding-top: 10px;
 }
 
 @media (max-width: 575px) {
@@ -11642,7 +11725,7 @@ button {
     margin-inline: 20px;
   }
   .box2 .Welcome {
-    margin-inline: 50px !important;
+    margin-inline: 30px !important;
   }
 }
 @media (max-width: 1199px) {
@@ -11650,7 +11733,7 @@ button {
     padding-left: 160px;
   }
   .box2 .Welcome h1 {
-    padding-left: 30px;
+    padding-left: 35px !important;
   }
   .box2 .gerador p {
     white-space: nowrap;
@@ -11661,10 +11744,16 @@ button {
     padding-left: 160px;
   }
   .box2 .Welcome h1 {
-    padding-left: 30px;
+    padding-left: 70px;
   }
   .box2 .gerador p {
     white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 15px;
+    padding-left: 20px !important;
   }
 }
 
