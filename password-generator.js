@@ -22,12 +22,17 @@ function validador (){
 
     var valor = document.getElementById('senha').value;
 
-         if(valor === document.getElementById('password').value ){
-             window.location.href="conteudo.html";
+        if(valor === ''){
+            alert('Senha Incorreta :(')
+            // window.location.href="conteudo.html";
          }
+         else if (valor === document.getElementById('password').value ){
+                    window.location.href="conteudo.html";
+         }  
          else{
              alert('Senha Incorreta :(')
          }
+
 
         }
 
